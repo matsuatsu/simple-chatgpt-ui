@@ -2,6 +2,12 @@
 
 Simple ChatGPT UI is a simple frontend application for conducting dialogues using the OpenAI API. It securely stores API keys and conversations in the client's local storage.
 
+[Demo](https://matsuatsu.github.io/simple-chatgpt-ui/)
+
+<p align="center">
+    <img src="assets/screenshot.png" alt="landing" width=500 />
+</p>
+
 ## Installation
 
 To install this application, follow these steps:
