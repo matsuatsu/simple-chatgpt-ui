@@ -1,0 +1,36 @@
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body,
+  html {
+    height: 100%;
+  }
+
+  body {
+    line-height: inherit;
+    margin: 0;
+  }
+
+  #root {
+    height: 100%;
+  }
+
+  table {
+    border-collapse: collapse;
+    background: whitesmoke;
+    width: 90%;
+    margin: 10px;
+  }
+
+  th,
+  td {
+    border: 1px solid lightgray;
+    padding: 8px;
+  }
+
+  tr:hover {
+    background: white;
+  }
+}
