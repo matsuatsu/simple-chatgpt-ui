@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react";
-import { MdSend } from "react-icons/md";
-import { Box, TextField, Button } from "@mui/material";
-import { createUserMessage, useMessageStore } from "../stores/message";
-import { useOpenaiConfigStore } from "../stores/openaiConfig";
+import { MdSend, MdAutoFixHigh } from "react-icons/md";
+import { Box, TextField, Button, IconButton } from "@mui/material";
+import { createUserMessage, useMessageStore } from "../../stores/message";
+import { useOpenaiConfigStore } from "../../stores/openaiConfig";
+import PromptModal from "./PromptModal";
 
 const ChatInput = () => {
   const openaiConfig = useOpenaiConfigStore((state) => state.openaiConfig);
 
   const [message, setMessage] = useState("");
   const [disabled, setDisabled] = useState(false);
+
+  const [openPromptModal, setOpenPromptModal] = useState(false);
 
   const messages = useMessageStore((state) => state.messages);
   const setMessages = useMessageStore((state) => state.setMessages);
@@ -45,6 +48,11 @@ const ChatInput = () => {
         boxShadow: 5,
       }}
     >
+      <PromptModal
+        open={openPromptModal}
+        setOpenPromptModal={setOpenPromptModal}
+        setMessage={setMessage}
+      ></PromptModal>
       {messages[messages.length - 1]?.isError ? (
         <Button
           variant="contained"
@@ -55,6 +63,12 @@ const ChatInput = () => {
         </Button>
       ) : (
         <>
+          <IconButton
+            onClick={() => setOpenPromptModal(true)}
+            sx={{ margin: "10px 0px 10px 10px" }}
+          >
+            <MdAutoFixHigh />
+          </IconButton>
           <TextField
             maxRows={10}
             multiline
