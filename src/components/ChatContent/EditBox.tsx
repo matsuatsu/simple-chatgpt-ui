@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { createUserMessage, useMessageStore } from "../stores/message";
+import { createUserMessage, useMessageStore } from "../../stores/message";
 import { Box, Button, TextField } from "@mui/material";
-import { useOpenaiConfigStore } from "../stores/openaiConfig";
+import { useOpenaiConfigStore } from "../../stores/openaiConfig";
 
 const EditBox = ({
   content,

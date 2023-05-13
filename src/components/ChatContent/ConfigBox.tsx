@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, Card, CardContent, TextField, MenuItem } from "@mui/material";
-import { useOpenaiConfigStore } from "../stores/openaiConfig";
-import { ModelOptions, OpenaiConfigInterface } from "../types/openaiConfig";
+import { useOpenaiConfigStore } from "../../stores/openaiConfig";
+import { ModelOptions, OpenaiConfigInterface } from "../../types/openaiConfig";
 import { grey } from "@mui/material/colors";
 
 const ConfigBox = () => {

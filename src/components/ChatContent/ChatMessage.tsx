@@ -7,7 +7,7 @@ import {
   LinearProgress,
   Typography,
 } from "@mui/material";
-import { MessageInterface } from "../types/message";
+import { MessageInterface } from "../../types/message";
 import ChatIcon from "./ChatIcon";
 import CopyButton from "./CopyButton";
 import { MdEdit } from "react-icons/md";

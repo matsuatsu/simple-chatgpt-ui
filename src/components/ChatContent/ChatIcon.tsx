@@ -1,6 +1,6 @@
 import { MdPerson, MdComputer } from "react-icons/md";
 import { FaRobot } from "react-icons/fa";
-import { Role } from "../types/message";
+import { Role } from "../../types/message";
 import { grey } from "@mui/material/colors";
 
 const ChatIcon = ({ role }: { role: Role }) => {

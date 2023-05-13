@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Box } from "@mui/material";
-import { useMessageStore } from "../stores/message";
+import { useMessageStore } from "../../stores/message";
 import ChatMessage from "./ChatMessage";
 import ConfigBox from "./ConfigBox";
 import { styled } from "@mui/material/styles";
