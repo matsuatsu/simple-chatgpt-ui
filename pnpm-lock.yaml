@@ -25,9 +25,6 @@ dependencies:
   react-markdown:
     specifier: ^8.0.6
     version: 8.0.6(@types/react@18.0.31)(react@18.2.0)
-  react-scroll:
-    specifier: ^1.8.9
-    version: 1.8.9(react-dom@18.2.0)(react@18.2.0)
   react-syntax-highlighter:
     specifier: ^15.5.0
     version: 15.5.0(react@18.2.0)
@@ -54,9 +51,6 @@ devDependencies:
   '@types/react-dom':
     specifier: ^18.0.11
     version: 18.0.11
-  '@types/react-scroll':
-    specifier: ^1.8.6
-    version: 1.8.6
   '@types/react-syntax-highlighter':
     specifier: ^15.5.6
     version: 15.5.6
@@ -762,12 +756,6 @@ packages:
       '@types/react': 18.0.31
     dev: false
 
-  /@types/react-scroll@1.8.6:
-    resolution: {integrity: sha512-aMTiNgcmA7dwn1yjoHsiL78RfRnKCXzFyMbv63VrZTXloSfNePBdKtVObC3/My6irwDf0Oz0U4VjEC/vrv6/9w==}
-    dependencies:
-      '@types/react': 18.0.31
-    dev: true
-
   /@types/react-syntax-highlighter@15.5.6:
     resolution: {integrity: sha512-i7wFuLbIAFlabTeD2I1cLjEOrG/xdMa/rpx2zwzAoGHuXJDhSqp9BSfDlMHSh9JSuNfxHk9eEmMX6D55GiyjGg==}
     dependencies:
@@ -1436,10 +1424,6 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: false
 
-  /lodash.throttle@4.1.1:
-    resolution: {integrity: sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==}
-    dev: false
-
   /longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
     dev: false
@@ -2081,18 +2065,6 @@ packages:
       vfile: 5.3.7
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /react-scroll@1.8.9(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-9m7ztraiX/l6L7erzYAD3fhnveNckei6/NkWfqwN2e0FRdoE2W6Pk4oi2Nah7mWpPCPAeIgegfaqZACTimPOwg==}
-    peerDependencies:
-      react: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      lodash.throttle: 4.1.1
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react-syntax-highlighter@15.5.0(react@18.2.0):
