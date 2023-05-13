@@ -4,6 +4,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { blueGrey } from "@mui/material/colors";
 import { styled } from "@mui/material/styles";
+import ChatInput from "./components/ChatInput";
+import Header from "./components/Header";
 
 function App() {
   const theme = createTheme({
@@ -29,19 +31,26 @@ function App() {
     },
   });
 
-  const RootBox = styled(Box)(({ theme }) => ({
+  const MainBox = styled(Box)(({ theme }) => ({
     width: "100%",
     height: "100%",
+    maxWidth: theme.breakpoints.values.md,
+    margin: "auto",
+    display: "flex",
+    flexFlow: "column",
+    justifyContent: "flex-end",
     overflow: "hidden",
-    backgroundColor: theme.palette.grey[400],
+    backgroundColor: theme.palette.grey[50],
   }));
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <RootBox>
+      <MainBox>
+        <Header />
         <ChatContent />
-      </RootBox>
+        <ChatInput />
+      </MainBox>
     </ThemeProvider>
   );
 }

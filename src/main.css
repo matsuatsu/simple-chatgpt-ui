@@ -4,17 +4,16 @@
   }
 
   body,
-  html {
+  html,
+  #root {
     height: 100%;
+    overflow: hidden;
+    background: silver;
   }
 
   body {
     line-height: inherit;
     margin: 0;
-  }
-
-  #root {
-    height: 100%;
   }
 
   table {

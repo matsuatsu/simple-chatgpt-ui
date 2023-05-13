@@ -2,7 +2,7 @@ import { Box, AppBar, IconButton, Toolbar, Typography } from "@mui/material";
 import { MdRefresh } from "react-icons/md";
 import { useMessageStore } from "../stores/message";
 
-const ChatHeader = () => {
+const Header = () => {
   const setMessages = useMessageStore((state) => state.setMessages);
 
   const resetChat = () => {
@@ -27,4 +27,4 @@ const ChatHeader = () => {
   );
 };
 
-export default ChatHeader;
+export default Header;
