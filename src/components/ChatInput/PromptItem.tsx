@@ -7,7 +7,7 @@ import {
   MdEdit,
   MdContentPasteGo,
 } from "react-icons/md";
-import { usePromptStore } from "../../stores/prompts";
+import { usePromptStore } from "../../stores/prompt";
 import { styled } from "@mui/material";
 
 const ConfirmBox = ({

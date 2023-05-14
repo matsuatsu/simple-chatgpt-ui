@@ -9,7 +9,7 @@ import {
 import { MdAddCircle } from "react-icons/md";
 import { PromptInterface } from "../../types/prompt";
 import PromptItem from "./PromptItem";
-import { usePromptStore } from "../../stores/prompts";
+import { usePromptStore } from "../../stores/prompt";
 
 const PromptModal = ({
   open,
