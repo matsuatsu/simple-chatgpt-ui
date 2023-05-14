@@ -69,7 +69,7 @@ const PromptItem = ({
 
   return (
     <PromptGrid container p={1}>
-      <Grid item md={3} p={1}>
+      <Grid item xs={3} p={1}>
         {isEditing ? (
           <TextField
             fullWidth
@@ -81,7 +81,7 @@ const PromptItem = ({
           <Box>{localName}</Box>
         )}
       </Grid>
-      <Grid item md={7} p={1}>
+      <Grid item xs={7} p={1}>
         {isEditing ? (
           <TextField
             fullWidth
@@ -94,7 +94,7 @@ const PromptItem = ({
           <Box>{localPrompt}</Box>
         )}
       </Grid>
-      <Grid item md={2} display={"flex"} justifyContent={"end"}>
+      <Grid item xs={2} display={"flex"} justifyContent={"end"}>
         {isEditing && (
           <ConfirmBox
             onClickCheck={() => updatePrompt()}
