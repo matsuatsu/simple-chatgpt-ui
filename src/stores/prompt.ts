@@ -15,6 +15,6 @@ export const usePromptStore = create<PropmtsStore>()(
         set({ prompts: [...prompts] });
       },
     }),
-    { name: "message", storage: createJSONStorage(() => localStorage) }
+    { name: "prompt", storage: createJSONStorage(() => localStorage) }
   )
 );
